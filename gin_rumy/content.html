@@ -1,0 +1,70 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Gin Rumy D3</title>
+		<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+		<script type="text/javascript" src="lib/underscore-min.js"></script>
+		<style type="text/css">
+			body {
+				background: black;
+			}
+			.hand {
+				width: 800;
+				height: 100;
+				background: black;
+				margin-top: 5;
+				display: inline-block;
+			}
+			.stock {
+				width: 100;
+				height: 100;
+				background: black;
+				border: 2px solid white;
+				margin-top: 5;
+			}
+			.community {
+				width: 600;
+				height: 100;
+				background: black;
+				margin-top: 5;
+			}
+			.played {
+				width: 600;
+				height: 100;
+				background: black;
+				border: 2px solid white;
+				margin-top: 5;
+			}
+			button {
+				width: 110;
+				height: 40;
+				background: #1874CD;
+				color: white;
+				font: arial;
+				font-size: 14;
+				font-weight: bold;
+				position: relative;
+				display: inline-block;
+				margin-left: 10;
+				margin-top: 10;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="hand" id="cpu"></div>
+		<div class="played" id="cpuPlayed"></div>
+		<div class="stock" id="stock"></div>
+		<div class="community" id="community"></div>
+		<div class="played" id="p1Played"></div>
+		<div class="hand" id="p1" float="left" ></div>
+		<button id="sortValues">Sort values</button>
+		<button id="playHand">Play cards</button>
+		<button id="discard">Discard</button>
+		<script type="text/javascript" src="card_game.js"></script>
+		<script type="text/javascript" src="ui.js"></script>
+		<script type="text/javascript" src="ai.js"></script>
+		<script type="text/javascript" src="game.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
